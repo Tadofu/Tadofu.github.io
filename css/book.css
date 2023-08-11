@@ -1,0 +1,125 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Dac Duy
+ID: s3978210
+Acknowledgement: https://www.youtube.com/embed/A-jzAyOO6d4, https://www.bookwalas.com/wp-content/uploads/2020/07/IMG_20200702_152800.webp, https://i.thenile.io/r1000/9781634502535.jpg?r=5eab20cf2196d, https://tse2.mm.bing.net/th/id/OIP.l2yC2Kse7rQtDeaSAbcLBwAAAA?pid=ImgDet&rs=1, https://d1cm35kbp068hs.cloudfront.net/vyawdkgs5m/cover.jpg, https://th.bing.com/th/id/R.8d65b8278e1bf4351b44534eb03d5652?rik=th1kqhIz2Pw1bg&riu=http%3a%2f%2frecoverybookstore.com%2fstore%2fproduct_images%2fp%2f038%2fThe_Gifts_of_Imperfection_Book_-_Brene_Brown_-_Front_Cover__28813_zoom.jpg&ehk=YXGenFGKCzpQTC%2fG9AiTkcf7wFRwQ4agdXS7z4eF%2fzI%3d&risl=&pid=ImgRaw&r=0, https://tse1.mm.bing.net/th/id/OIP.-fjCRd3PIvrJhtHkzJOLsQAAAA?pid=ImgDet&rs=1, https://tse3.mm.bing.net/th/id/OIP.GB1eRJ7wMEe-3iw40A6DTwHaHp?pid=ImgDet&rs=1, https://m.media-amazon.com/images/S/aplus-media/vc/fa834f3b-9076-4904-9408-9e46dbc1ddae.jpg, https://cdn11.bigcommerce.com/s-aqhrs1x7/images/stencil/1280x1280/products/451/709/BK0009900_fouragr__11113.1372564521.jpg?c=2&imbypass=on, https://www.goodreads.com/book/show/11870085-the-fault-in-our-stars, https://www.goodreads.com/book/show/30186948-think-and-grow-rich, https://www.goodreads.com/book/show/16068905-fangirl, https://www.goodreads.com/book/show/51791252-the-vanishing-half?ac=1&from_search=true&qid=MbdKJqbCIo&rank=1, https://www.goodreads.com/book/show/4671.The_Great_Gatsby, https://www.goodreads.com/book/show/41057294-normal-people, https://www.goodreads.com/book/show/7015403-the-gifts-of-imperfection, https://www.goodreads.com/book/show/6596.The_Four_Agreements, https://www.goodreads.com/book/show/1617.Night, https://www.goodreads.com/book/show/2715.Salt, https://www.goodreads.com/book/show/48855.The_Diary_of_a_Young_Girl, https://www.goodreads.com/book/show/15745753-eleanor-park, https://thewordyboy.com/book-store-about-us/, https://www.campusebookstore.com/PrivacyPolicy.aspx, https://campusebookstore.com/about/TermsOfService.aspx, https://www.ebooks.com/en-us/information/copyright/ */
+img {
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+#breadcumb {
+    text-align: center;
+    margin: 32px 0;
+    font-size: 38px;
+}
+
+#book-detail {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    display: flex;
+    height: 1280px;
+    gap: 32px;
+}
+
+#large-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#large-image img {
+    height: 96.7%;
+    object-fit: cover;
+}
+
+#small-images {
+    width: 20%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#small-images img {
+    height: 100%;
+    width: 90%;
+}
+
+.images-list {
+    height: 30%;
+}
+
+#buy-book {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#buy-book h3 {
+    font-size: 38px;
+    margin: 48px 0;
+}
+
+#book-desciption {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+#book-description h3 {
+    font-size: 38px;
+    margin-top: 32px;
+}
+
+#book-description h4 {
+    margin: 16px 0;
+}
+
+#book-description p {
+    margin-bottom: 16px;
+}
+
+.author {
+    align-items: center;
+}
+
+@media only screen and (max-width: 991px) {
+    #book-detail {
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #book-detail {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #large-image {
+        width: 100%;
+    }
+
+    #small-images {
+        flex-direction: row;
+        width: 100%;
+        gap: 32px;
+    }
+
+    .images-list {
+        height: 100%;
+    }
+
+    #buy-book {
+        width: 100%;
+    }
+}
